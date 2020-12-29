@@ -3,3 +3,4 @@ pandas==1.2.0
 pandas_highcharts
 pylint
 autopep8
+pytest-cov
