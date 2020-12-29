@@ -1,3 +1,5 @@
+![Python application](https://github.com/sgooding/pi-thermo-highchart/workflows/Python%20application/badge.svg)
+
 # Pi-Thermo HighChart
 A simple highchart, sqlite, flask example.
 
