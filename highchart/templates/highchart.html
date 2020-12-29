@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Temperature and Humidity</title>
+<script src="https://code.highcharts.com/stock/highstock.src.js"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='dark_theme.css') }}">
+</head>
+
+<body>
+  <h3>
+    Resample Options
+  </h3>
+  <a href="/hour"><input type="button" value="hour"/></a>
+  <a href="/day"><input type="button" value="day"/></a>
+  <a href="/month"><input type="button" value="month"/></a>
+  <a href="/year"><input type="button" value="year"/></a>
+
+  <h3>Bailey Temperature and Humidity Display</h3>
+
+  <div id="my-chart"></div>
+  <script type="text/javascript">
+    new Highcharts.stockChart({{chart|safe}});
+  </script>
+
+</body>
+</html>
